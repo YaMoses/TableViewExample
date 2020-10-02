@@ -16,6 +16,10 @@
 		826D388C251C9F030015589A /* TableViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D388B251C9F030015589A /* TableViewExampleTests.swift */; };
 		826D3897251C9F030015589A /* TableViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D3896251C9F030015589A /* TableViewExampleUITests.swift */; };
 		826D38A8251CA2450015589A /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826D38A7251CA2450015589A /* FoodTableViewCell.swift */; };
+		8274D65F2527315B007D8EA4 /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274D65E2527315B007D8EA4 /* CoffeeShop.swift */; };
+		8274D664252739E5007D8EA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274D663252739E5007D8EA4 /* DetailViewController.swift */; };
+		827E2B352521F33700F15107 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E2B342521F33700F15107 /* ShopCollectionViewCell.swift */; };
+		82E206612521ECC0006509EE /* FoodCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E206602521ECC0006509EE /* FoodCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		826D3896251C9F030015589A /* TableViewExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExampleUITests.swift; sourceTree = "<group>"; };
 		826D3898251C9F030015589A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		826D38A7251CA2450015589A /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		8274D65E2527315B007D8EA4 /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
+		8274D663252739E5007D8EA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		827E2B342521F33700F15107 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
+		82E206602521ECC0006509EE /* FoodCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,15 @@
 		826D3873251C9F000015589A /* TableViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				827E2B2D2521F05800F15107 /* Cells */,
+				827E2B2C2521F03E00F15107 /* Controllers */,
 				826D3874251C9F000015589A /* AppDelegate.swift */,
 				826D3876251C9F000015589A /* SceneDelegate.swift */,
-				826D3878251C9F000015589A /* ViewController.swift */,
 				826D387A251C9F000015589A /* Main.storyboard */,
 				826D387D251C9F030015589A /* Assets.xcassets */,
 				826D387F251C9F030015589A /* LaunchScreen.storyboard */,
 				826D3882251C9F030015589A /* Info.plist */,
-				826D38A7251CA2450015589A /* FoodTableViewCell.swift */,
+				8274D65E2527315B007D8EA4 /* CoffeeShop.swift */,
 			);
 			path = TableViewExample;
 			sourceTree = "<group>";
@@ -129,6 +138,25 @@
 				826D3898251C9F030015589A /* Info.plist */,
 			);
 			path = TableViewExampleUITests;
+			sourceTree = "<group>";
+		};
+		827E2B2C2521F03E00F15107 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8274D663252739E5007D8EA4 /* DetailViewController.swift */,
+				82E206602521ECC0006509EE /* FoodCollectionViewController.swift */,
+				826D3878251C9F000015589A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		827E2B2D2521F05800F15107 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				826D38A7251CA2450015589A /* FoodTableViewCell.swift */,
+				827E2B342521F33700F15107 /* ShopCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827E2B352521F33700F15107 /* ShopCollectionViewCell.swift in Sources */,
 				826D3879251C9F000015589A /* ViewController.swift in Sources */,
+				82E206612521ECC0006509EE /* FoodCollectionViewController.swift in Sources */,
+				8274D65F2527315B007D8EA4 /* CoffeeShop.swift in Sources */,
 				826D38A8251CA2450015589A /* FoodTableViewCell.swift in Sources */,
 				826D3875251C9F000015589A /* AppDelegate.swift in Sources */,
 				826D3877251C9F000015589A /* SceneDelegate.swift in Sources */,
+				8274D664252739E5007D8EA4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
